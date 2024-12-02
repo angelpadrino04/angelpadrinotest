@@ -32,13 +32,9 @@ export default function Experience({ color }) {
 
   useEffect(() => {
     if (options.length > 0) {
-      setSelected(options[0].value);
+      setSelected(options[0]);
     }
   }, [options]);
-
-  const handleSelected = (value) => {
-    setSelected(value);
-  };
 
   return (
     <>
@@ -60,56 +56,51 @@ export default function Experience({ color }) {
           </Stack>
 
           <Stack px={4} spacing={4}>
-            {experience
-              .filter((exp) => exp.tags.includes(selected))
-              .map((exp) => (
-                <Fade bottom>
-                  <Card key={exp.company} size="sm">
-                    <CardHeader>
-                      <Flex justifyContent="space-between">
-                        <HStack>
-                          <Image src={exp.image} h={50} />
-                          <Box px={2} align="left">
-                            <Text fontWeight={600}>{exp.company}</Text>
-                            <Text>{exp.position}</Text>
-                          </Box>
-                        </HStack>
-                        <Text px={2} fontWeight={300}>
-                          {exp.duration}
-                        </Text>
-                      </Flex>
-                    </CardHeader>
-                    <CardBody>
-                      <Flex>
-                        <List align="left" spacing={3}>
-                          {exp.listItems.map((item, index) => (
-                            <ListItem key={index}>
-                              <ListIcon
-                                boxSize={6}
-                                as={ChevronRightIcon}
-                                color={`${color}.500`}
-                              />
-                              {item}
-                            </ListItem>
-                          ))}
-                        </List>
-                      </Flex>
-                    </CardBody>
-                    <CardFooter display="flex" flexDirection="column">
-                      <HStack spacing={2} display="flex" flexWrap="wrap">
-                        {exp.badges.map((badge) => (
-                          <Badge
-                            key={badge.name}
-                            colorScheme={badge.colorScheme}
-                          >
-                            {badge.name}
-                          </Badge>
-                        ))}
+            {experience.map((exp) => (
+              <Fade bottom>
+                <Card key={exp.company} size="sm">
+                  <CardHeader>
+                    <Flex justifyContent="space-between">
+                      <HStack>
+                        <Image src={exp.image} h={50} />
+                        <Box px={2} align="left">
+                          <Text fontWeight={600}>{exp.company}</Text>
+                          <Text>{exp.position}</Text>
+                        </Box>
                       </HStack>
-                    </CardFooter>
-                  </Card>
-                </Fade>
-              ))}
+                      <Text px={2} fontWeight={300}>
+                        {exp.duration}
+                      </Text>
+                    </Flex>
+                  </CardHeader>
+                  <CardBody>
+                    <Flex>
+                      <List align="left" spacing={3}>
+                        {exp.listItems.map((item, index) => (
+                          <ListItem key={index}>
+                            <ListIcon
+                              boxSize={6}
+                              as={ChevronRightIcon}
+                              color={`${color}.500`}
+                            />
+                            {item}
+                          </ListItem>
+                        ))}
+                      </List>
+                    </Flex>
+                  </CardBody>
+                  <CardFooter display="flex" flexDirection="column">
+                    <HStack spacing={2} display="flex" flexWrap="wrap">
+                      {exp.badges.map((badge) => (
+                        <Badge key={badge.name} colorScheme={badge.colorScheme}>
+                          {badge.name}
+                        </Badge>
+                      ))}
+                    </HStack>
+                  </CardFooter>
+                </Card>
+              </Fade>
+            ))}
           </Stack>
         </Stack>
       </Container>

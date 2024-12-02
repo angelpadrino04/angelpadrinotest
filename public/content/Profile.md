@@ -9,12 +9,10 @@ Front-end Development: Skilled in crafting responsive, user-friendly interfaces 
 Back-end Development: Experienced in designing and implementing scalable, efficient back-end architectures using Node.js, Express, and other frameworks.
 API Integration: Adept at integrating third-party APIs and developing custom APIs to facilitate data exchange and drive business growth.
 
-
 ## Contact
-Write your "Contact" section here.
-- LinkedIn: https://linkedin.com/in/username
-- GitHub: https://github.com/username
-- Email: username@gmail.com
 
+- LinkedIn: https://www.linkedin.com/in/angel-padrino/
+- GitHub: https://github.com/angelpadrino04
+- Email: angel.padrino04@gmail.com
 ## Logo
 - AP
