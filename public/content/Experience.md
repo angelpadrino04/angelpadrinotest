@@ -1,29 +1,11 @@
-## Company 1
-- *Role* | Jan'23 - Feb'23
-- ![logo512](../assets/logo512.png)
-- Tags: Category 1
+## Ibis
+- *Full-Stack JavaScript Developer* | May 2021 - Present
+- ![image_name](../assets/logo.png)
+- Tags: Work
 - Badges:
-  - Badge [blue]
-- List Items:
-  - Point 1
-  - Point 2
-
-## Company 2
-- *Role* | Feb'23 - Mar'23
-- ![logo512](../assets/logo512.png)
-- Tags: Category 2
-- Badges:
-  - Badge [blue]
-- List Items:
-  - Point 1
-  - Point 2
-
-## Company 3
-- *Role* | Mar'23 - Apr'23
-- ![logo512](../assets/logo512.png)
-- Tags: Category 3
-- Badges:
-  - Badge [blue]
+  - Full-Stack Developer [badge_colour]
+  - MERN [badge_colour]
+  - TESTING [badge_colour]
 - List Items:
   - Point 1
   - Point 2

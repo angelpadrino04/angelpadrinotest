@@ -13,6 +13,7 @@ const parseProfile = (mdContent) => {
     email: "",
     logo: "",
   };
+  console.log(mdContent)
 
   const lines = mdContent.split("\n");
 

@@ -58,18 +58,7 @@ export default function Experience({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Center px={4}>
-            <ButtonGroup variant="outline">
-              {options.map((option) => (
-                <Button
-                  colorScheme={selected === option.value ? `${color}` : "gray"}
-                  onClick={() => handleSelected(option.value)}
-                >
-                  {option.value}
-                </Button>
-              ))}
-            </ButtonGroup>
-          </Center>
+     
           <Stack px={4} spacing={4}>
             {experience
               .filter((exp) => exp.tags.includes(selected))
