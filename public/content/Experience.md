@@ -6,6 +6,11 @@
   - Full-Stack Developer [badge_colour]
   - MERN [badge_colour]
   - TESTING [badge_colour]
+  - TRPC [badge_colour]
+  - MOBILE DEVELOPMENT [badge_colour]
 - List Items:
-  - Point 1
-  - Point 2
+  - Designed and developed intuitive user interfaces based on Figma designs, ensuring seamless user experiences.
+  - Architected and developed finance-oriented APIs, driving business growth through efficient data exchange.
+  - Optimized payment processing, achieving a 98.33% reduction in operation time, which significantly improved overall efficiency.
+  - Automate payment processes for CLP, ARS, COP, VES, PEN, CL, USDT, ES.
+  - Development and architecture of B2B services, allowing companies to optimize their payment and verification processe.

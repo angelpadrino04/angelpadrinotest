@@ -35,7 +35,7 @@ export default function Experience({ color }) {
       setSelected(options[0].value);
     }
   }, [options]);
-  
+
   const handleSelected = (value) => {
     setSelected(value);
   };
@@ -58,7 +58,7 @@ export default function Experience({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-     
+
           <Stack px={4} spacing={4}>
             {experience
               .filter((exp) => exp.tags.includes(selected))
@@ -95,8 +95,8 @@ export default function Experience({ color }) {
                         </List>
                       </Flex>
                     </CardBody>
-                    <CardFooter>
-                      <HStack spacing={2}>
+                    <CardFooter display="flex" flexDirection="column">
+                      <HStack spacing={2} display="flex" flexWrap="wrap">
                         {exp.badges.map((badge) => (
                           <Badge
                             key={badge.name}
